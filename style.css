@@ -1,0 +1,760 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    
+    background-color: rgb(235, 229, 222);
+}
+
+/* Navbar */
+
+.navbar .navbar-brand svg{
+    width:15px;
+    margin-left:5px;
+}
+
+
+/* Herosection */
+
+.herosection{
+    width:100%;
+    height:250px;
+    position:relative;
+}
+
+.heroimage{
+    width:100%;
+    height:40vh;
+}
+
+.herosection .herotext{
+    position:absolute;
+    margin-left:20px;
+    top:80px;
+    left:0;
+    color:white;
+    font-size:10px;
+}
+
+/* Carousel */
+    .carousel{
+        width:100%;
+        height:400px;
+        margin-top:120px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+   .carousel .image1{
+        width:200px;
+        background-image:url(image/1.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-top:10px;
+    }
+
+    .carousel .image2{
+        width:200px;
+        background-image:url(image/2.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-top:10px;
+    }
+
+    .carousel .image3{
+        width:200px;
+        background-image:url(image/3.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-top:10px;
+    }
+
+
+    /* About */
+
+    .about{
+        padding-top:60px;
+        margin-top:100px;
+        width:100%;
+        height:400px;
+        display:flex;
+        justify-content:center;
+    
+    }
+
+    .kotakabout{
+        padding:10px;
+        margin-top:20px;
+        width:300px;
+        border:2px solid black;
+        border-radius:30px;
+        text-align:center;
+        position: relative;
+        
+    }
+
+
+    .kotakabout h4{
+        margin-top:80px;
+        font-size:15px;
+    }
+
+    .kotakabout p{
+        font-size:12px;
+    }
+
+   .about .kotakabout img{
+       position:absolute;
+        top:-80px;
+        left:80px;
+        border-radius:70px;
+        width:150px;
+        height:150px;
+    }
+
+   
+
+    /* Portofolio */
+    .portofolio{
+        padding-top:90px;
+        display:grid;
+        margin-top:50px;
+        width:100%;
+        height:400px;
+        grid-template-columns: repeat(3,auto);
+        grid-template-areas: 'ilustrasi ilustrasi ilustrasi'
+                            'photography photography photography';
+        place-content: center center;
+                        } 
+                        
+    .ilustrasi{
+        grid-area: ilustrasi;
+        background-color: #fff;
+        position:relative;   
+    }
+
+    .photography{
+        grid-area: photography;
+        position:relative;
+    }
+
+   .portofolio .ilustrasi img{
+       width:400px;
+    }
+
+    .portofolio .photography img{
+        width:400px;
+     }
+
+    .tombolilus{
+        border-radius:30px;
+        background-color: rgba(8, 8, 8, 0.164);
+        color:white;
+        position:absolute;
+        top:150px;
+        left:10px;
+    }
+
+    .tombolphoto{
+        border:1px solid white;
+        border-radius:30px;
+        background-color: rgba(8, 8, 8, 0.164);
+        color:white;
+        position:absolute;
+        top:150px;
+        right:10px;
+    }
+
+    /* Galeri Ilus */
+
+    .galeryilus{
+        margin-top:90px;
+        display:grid;
+        grid-template-areas:'ilus satu ilus dua'
+                            'ilus tiga ilus empat'
+                            'ilus lima ilus enam'
+                            'ilus tujuh ilus delapan';
+        grid-template-columns: repeat(2,150px);
+        place-content:center;
+        grid-template-rows: repeat(4,100px);
+        grid-gap:10px;
+                    }
+
+    .galeryilus .ilus{
+        text-align:center;
+        font-size: 10px;
+        text-decoration:underline;
+    }
+
+    .galeryilus .ilus.satu{
+        grid-area: ilus satu;
+       
+    }
+
+    .galeryilus .ilus.dua{
+        grid-area: ilus dua;
+        
+    }
+
+    .galeryilus .ilus.tiga{
+        grid-area: ilus tiga;
+        
+    }
+
+    .galeryilus .ilus.empat{
+        grid-area: ilus empat;
+        
+    }
+
+    .galeryilus .ilus.lima{
+        grid-area: ilus lima;
+        
+    }
+
+    .galeryilus .ilus.enam{
+        grid-area: ilus enam;
+        
+    }
+
+    .galeryilus .ilus.tujuh{
+        grid-area: ilus tujuh;
+        
+    }
+
+    .galeryilus .ilus.delapan{
+        grid-area: ilus delapan;
+       
+    }
+
+    .galeryilus .ilus img{
+        width:150px;
+     }
+  
+
+     .galeryfoto{
+         margin-top:80px;
+         display:grid;
+         grid-template-areas: 'fotosatu fotosatu freewallpapersatu'
+                            'freewallpaperdua fotodua fotodua';
+         grid-template-columns: auto 120px;
+         grid-template-rows: repeat(2, 150px);
+        grid-gap:10px;
+          }
+
+        .fotosatu{
+            position: relative;
+            grid-area: fotosatu;
+            background-image: url(image/3.jpg);
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border:1px solid rgb(116, 112, 112);
+        }
+
+        .freewallpapersatu{
+            grid-area: freewallpapersatu;
+            border:1px solid rgb(116, 112, 112);
+        }
+
+        .fotodua{
+            position: relative;
+            grid-area: fotodua;
+            background-image: url(image/1.jpg);
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border:1px solid rgb(116, 112, 112);
+        }
+
+        .freewallpaperdua{
+            grid-area: freewallpaperdua;
+            border:1px solid rgb(116, 112, 112);
+        }
+ 
+        .freewallpapersatu h2, .freewallpaperdua h2{
+            text-align: center;
+            margin-top:60px;
+            font-size:14px;
+        }
+
+
+        .tomboldownloadsatu{
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.048);
+            color:white;
+            border:1px solid white;
+            font-weight:bold;
+            position:absolute;
+            right:20px;
+            top:100px;
+            font-size:10px;
+        }
+
+        .tomboldownloaddua{
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.048);
+            color:white;
+            border:1px solid white;
+            font-weight:bold;
+            position:absolute;
+            right:20px;
+            top:100px;
+            font-size:10px;
+        
+        }
+
+
+        /* Blog Satu */
+        .bagiansatu{
+            margin-top:90px;
+            display:flex;
+            justify-content:center;
+            flex-direction:column;
+        }
+        .bagiansatu .fotobagiansatu img{
+          width:100%;
+          height:200px;
+           margin-bottom:2px; 
+           
+          
+          
+        }
+
+        .bagiansatu h1{
+            padding:10px;
+            text-decoration:underline;
+        }
+
+        .bagiansatu p{
+            padding:10px;
+            font-size:12px;
+        }
+
+
+        /* Blog2 */
+
+        .bagiandua{
+            display:grid;
+            grid-template-areas: ' fotobagiandua sidebagiandua'
+                                'pardua sidebagiandua'
+                                 ;
+            grid-template-columns: 200px 160px;
+            grid-template-rows: 110px 500px;
+            place-content: center center;
+        }
+
+        .bagiandua .fotobagiandua img{
+            width:190px;
+        }
+
+        .fotobagiandua{
+            grid-area: fotobagiandua;
+            
+        }
+
+        .bagiandua .pardua h1{
+            text-decoration:underline;
+        }
+
+        .sidebagiandua{
+            grid-area: sidebagiandua;
+            border:1px solid black;
+            z-index: -3;
+            padding:200px 8px;
+           
+        }
+
+        .pardua{
+            text-align: justify;
+            padding:8px;
+            grid-area: pardua;
+            font-size:12px;
+           
+        }
+
+
+        /* Blog3 */
+
+        .bagiantiga{
+            margin-top:30px;
+            display:grid;
+            grid-template-areas: 'fotobagiantiga partiga';
+            grid-template-columns:170px auto ;
+            grid-template-rows: 200px;
+        }   
+
+
+        .bagiantiga .fotobagiantiga img{
+            margin-left:10px;
+            margin-top:10px;
+            width:150px;
+        }
+        .fotobagiantiga{
+            grid-area: fotobagiantiga;
+        }
+        .partiga{
+            grid-area: partiga;
+            text-align: justify;
+            padding:8px;
+            font-size:12px;
+        }
+    .footer{
+        height:50px;
+        text-align:center;
+        background-color: grey;
+        margin-top:200px;
+        color:white;
+    }
+       
+    .footer p{
+        font-size: 9px;
+        padding-top:17px;
+    }
+
+    .footer p a[href]{
+        color:white;
+    }
+
+/* Tablet */
+@media only screen and (min-width:600px) { 
+    .heroimage{
+        width:100%;
+        height:500px;
+    }
+
+    .herosection .herotext{
+        font-size:14px;
+        top:100px;
+    }
+
+    .carousel{
+        margin-top:300px;
+       height:200px;
+       justify-content: space-around;
+    }
+
+    .carousel .image1{
+        padding:20px;
+        width:200px;
+    }
+
+    .carousel .image2{
+        padding:20px;
+        width:200px;
+    }
+
+    .carousel .image3{
+        padding:20px;
+        width:200px;
+    }
+
+    .kotakabout{
+        width:600px;
+        height:270px;
+    }
+
+    .about .kotakabout img{
+        left:220px;
+    }
+
+    .about .kotakabout p{
+        font-size:15px;
+    }
+   
+    .portofolio{
+        margin-top:200px;
+    }
+  
+    .portofolio .ilustrasi img{
+        width:700px;
+     }
+ 
+     .portofolio .photography img{
+         width:700px;
+      }
+
+      .tombolilus{
+        top:290px;
+        left:10px;
+    }
+
+    .tombolphoto{
+        top:290px;
+        right:10px;
+    }
+    
+    .galeryilus{
+        margin-top:300px;
+        display:grid;
+        grid-template-areas:'ilus satu ilus dua ilus tiga'
+                            'ilus empat ilus lima ilus enam'
+                            'ilus tujuh ilus delapan';
+        grid-template-columns: repeat(3,200px);
+        place-content:center;
+        grid-template-rows: repeat(3,130px);
+        grid-gap:10px;
+                    }
+
+    .galeryilus .ilus img{
+         width:200px;
+      }
+
+
+      .galeryfoto{
+        margin-top:90px;
+        display:grid;
+        grid-template-areas: 'fotosatu fotosatu freewallpapersatu'
+                           'freewallpaperdua fotodua fotodua';
+        grid-template-columns: auto 190px;
+        grid-template-rows: repeat(2, 150px);
+       
+         }
+
+         .freewallpapersatu h2, .freewallpaperdua h2{
+            text-align: center;
+            margin-top:60px;
+            font-size:14px;
+        }
+
+        .tomboldownloadsatu{
+          
+            font-size:18px;
+        }
+
+        .tomboldownloaddua{
+           
+            font-size:18px;
+        
+        }
+
+        .bagiansatu .fotobagiansatu img{
+            width:100vw;
+            height:40vh;
+             margin-bottom:2px; 
+             margin:auto;
+        }   
+
+        .bagiandua{
+            display:grid;
+            grid-template-areas: ' fotobagiandua sidebagiandua'
+                                'pardua sidebagiandua'
+                                 ;
+            grid-template-columns: 500px auto;
+            grid-template-rows: 270px 200px;
+            place-content: center center;
+        }
+
+        .bagiandua .fotobagiandua img{
+            width:480px;
+        }
+
+        .bagiantiga{
+            margin-top:30px;
+            display:grid;
+            grid-template-areas: 'fotobagiantiga partiga';
+            grid-template-columns:300px auto ;
+            grid-template-rows: 200px;
+        }   
+
+
+        .bagiantiga .fotobagiantiga img{
+            margin-left:10px;
+            margin-top:10px;
+            width:290px;
+        }
+        
+
+        .footer p{
+            font-size: 15px;
+            padding-top:17px;
+        }
+    
+      
+   
+ }
+
+
+
+/* Desktop */
+ @media screen and (min-width:996px){
+     .heroimage{
+         width:100vw;
+         height:700px;
+     }
+
+     .herosection h1{
+         font-size:100px;
+     }
+
+     .herosection .herotext{
+         top:100px;
+         font-size:20px;
+     }
+
+     .navbar-nav{
+         margin-left:350px;
+
+     }
+
+     .navbar-nav a{
+         margin-left:20px;
+     }
+
+     .navbar-nav a:hover{
+         color:aqua;
+     }
+
+     .carousel{
+         margin-top:500px;
+     }
+
+     .carousel .image1{
+        margin-top:40px;
+        width:300px;
+    }
+
+    .carousel .image2{
+        margin-top:40px;
+        width:300px;
+    }
+
+    .carousel .image3{
+        margin-top:40px;
+        width:300px;
+    }
+
+    .kotakabout{
+        width:900px;
+        height:270px;
+    }
+
+    .about .kotakabout img{
+        left:370px;
+    }
+    
+    .portofolio{
+        margin-top:100px;
+    }
+    .portofolio .ilustrasi img{
+        width:500px;
+     }
+ 
+     .portofolio .photography img{
+         margin-top:20px;
+         width:500px;
+      }
+
+      .tombolilus{
+        top:190px;
+        left:10px;
+    }
+
+    .tombolphoto{
+        top:190px;
+        right:10px;
+    }
+
+    .galeryilus{
+        margin-top:200px;
+        display:grid;
+        grid-template-areas:'ilus satu ilus dua ilus tiga ilus empat'
+                            'ilus lima ilus enam ilus tujuh ilus delapan'
+                            ;
+        grid-template-columns: repeat(4,260px);
+        place-content:center;
+        grid-template-rows: repeat(2,180px);
+        grid-gap:10px;
+                    }
+
+    .galeryilus .ilus img{
+     width:260px;
+    }
+
+    .galeryfoto{
+        margin-top:80px;
+        display:grid;
+        grid-template-areas: 'fotosatu fotosatu freewallpapersatu'
+                           'freewallpaperdua fotodua fotodua';
+        grid-template-columns:auto 250px;
+        grid-template-rows: repeat(2, 250px);
+       
+         }
+
+    .freewallpapersatu h2, .freewallpaperdua h2{
+        text-align: center;
+        margin-top:100px;
+        font-size:20px;
+        }  
+        
+        .tomboldownloadsatu{
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.048);
+            color:white;
+            border:1px solid white;
+            font-weight:bold;
+            position:absolute;
+            right:20px;
+            top:170px;
+            font-size: 20px;
+        }
+
+        .tomboldownloaddua{
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.048);
+            color:white;
+            border:1px solid white;
+            font-weight:bold;
+            position:absolute;
+            right:20px;
+            top:170px;
+            font-size: 20px;
+        
+        }
+        .bagiansatu .fotobagiansatu img{
+            width:100vw;
+            height:60vh;
+             margin-bottom:2px; 
+             margin:auto;
+    }
+
+    .bagiandua{
+        display:grid;
+        grid-template-areas: ' fotobagiandua sidebagiandua'
+                            'pardua sidebagiandua'
+                             ;
+        grid-template-columns: 800px auto;
+        grid-template-rows: 450px 200px;
+        place-content: center center;
+    }
+
+    .bagiandua .fotobagiandua img{
+        width:790px;
+    }
+
+    .bagiantiga{
+        margin-top:30px;
+        display:grid;
+        grid-template-areas: 'fotobagiantiga partiga';
+        grid-template-columns:500px auto ;
+        grid-template-rows: 200px;
+    }   
+
+
+    .bagiantiga .fotobagiantiga img{
+        margin-left:10px;
+        margin-top:10px;
+        width:490px;
+    }
+
+    .footer p{
+        font-size: 19px;
+        padding-top:15px;
+    }
+
+   
+   
+}
+
